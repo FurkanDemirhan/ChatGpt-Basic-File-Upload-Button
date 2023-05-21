@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name" : "ChatGpt Submit File Button",
+    "description": "a basic Submit file button",
+    "version" : "1.0",
+    "icons": {
+        "16": "images/icon.bmp",
+        "48": "images/icon.bmp",
+        "128": "images/icon.bmp"
+    },
+    "page_action" :{
+        "default_icon": {
+            "16": "images/icon.bmp",
+            "48": "images/icon.bmp",
+            "128": "images/icon.bmp"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://chat.openai.com/*"],
+        "js": ["button.js"]
+    }]
+}
